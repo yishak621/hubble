@@ -1,0 +1,301 @@
+/*General parameters*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+/*Typography*/
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+h2 {
+  margin-top: 70px;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  max-width: 20ch;
+}
+h3 {
+  font-size: 2rem;
+}
+.huddle__para {
+  font-size: 1.2rem;
+  color: black;
+  max-width: 51ch;
+  line-height: 22px;
+  font-weight: 500;
+}
+.text__para {
+  color: var(--color-paragraph);
+  font-size: 1.5rem;
+  line-height: 25px;
+}
+.build--header {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 40px 40px;
+  margin-bottom: 20px;
+  max-width: 40ch;
+}
+
+/*color pallete*/
+:root {
+  --color-pink: hsl(322, 100%, 66%);
+  --color-headings: black;
+  --color-paragraph: hsl(208, 11%, 55%);
+  --color-fotter: hsl(192, 100%, 9%);
+  --color-third: hsl(193, 100%, 96%);
+  --color-white: #fff;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*huddle section */
+.huddle {
+  background: url(images/bg-hero-mobile.svg);
+}
+.huddle-community {
+  margin: 1rem 4rem;
+}
+.top {
+  display: flex;
+
+  justify-content: space-between;
+
+  width: auto;
+}
+.logo {
+  width: fit-content;
+  transform: scale(0.8);
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.grid1x2 {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 6rem;
+}
+@media screen and (min-width: 800px) {
+  .huddle {
+    background: url(images/bg-hero-desktop.svg);
+    background-size: contain;
+  }
+  .grid1x2 {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+}
+
+.huddle__left {
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .huddle__left {
+    text-align: left;
+  }
+}
+
+/*buttons*/
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  outline: 0;
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+}
+
+.btn--try {
+  background-color: rgb(143, 248, 248);
+  color: black;
+  margin: 1.3rem 4rem;
+  width: 12rem;
+  display: inline-block;
+}
+.btn--try:hover {
+  background-color: rgb(35, 252, 252);
+}
+.btn--start {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: 1rem 4rem;
+}
+.btn--start:hover {
+  background-color: hsl(0, 33%, 1%);
+}
+
+.btn__build {
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+/*card section*/
+.card--grid {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.1); /*9px for distribution and 0.1 for intensity color....0 0 0 color type rgba*/
+  margin: 5rem 2rem;
+  padding: 4rem;
+}
+.text {
+  text-align: center;
+}
+.text__header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+@media screen and (min-width: 800px) {
+  .card--grid {
+    margin: 4rem 4rem;
+  }
+  .text {
+    align-self: center;
+    padding: 0 5rem;
+    text-align: left;
+  }
+  .card--grid:nth-of-type(odd) .picture {
+    /*it means that starting from the first of card section -card grid 1[odd] then changing the picture order to 1 ..since order starts from 0*/
+    order: 1;
+  }
+}
+/*Build relative box*/
+
+.build--box {
+  width: fit-content;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: var(--color-white);
+  position: relative;
+  left: 5rem;
+  top: 5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .build--box {
+    position: relative;
+    bottom: 10rem;
+    left: 30%;
+  }
+}
+/*footer*/
+.footer {
+  background: var(--color-fotter);
+}
+.grid1x4 {
+  display: grid;
+  grid-template-rows: (10rem 10rem);
+  font-size: 1.8rem;
+}
+li {
+  width: fit-content;
+  max-width: 40ch;
+  line-height: 50px;
+}
+li > a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+li > a:hover {
+  color: hsl(322, 100%, 66%);
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+.list__one {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.icon__image {
+  width: 20px;
+  height: 20px;
+  object-fit: contain; /*to allow icons fit properly*/
+}
+.logo__footer {
+  width: auto;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  position: relative;
+  right: 4rem;
+}
+
+/*grid one*/
+.first__box {
+  margin-top: 8rem;
+}
+.main__list {
+  list-style: none;
+  color: white;
+}
+.first__list {
+  line-height: 30px;
+}
+.last__list {
+  position: relative;
+  bottom: 4rem;
+}
+/*social media tag*/
+.copyright {
+  color: white;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.social {
+  text-align: center;
+}
+.social__image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 800px) {
+  .grid1x4 {
+    margin-top: 2rem;
+    margin-left: 8rem;
+    margin-bottom: 0;
+    grid-template-columns: repeat(4, 25%);
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .social {
+    text-align: left;
+    transform: scale(0.5);
+    position: relative;
+    right: 4rem;
+  }
+  .copyright {
+    position: relative;
+    top: 20rem;
+    width: 40rem;
+  }
+  .last__list {
+    bottom: 0;
+  }
+  .list {
+    margin-left: 5rem;
+    margin-top: 4rem;
+  }
+}
