@@ -126,7 +126,14 @@ img {
   color: black;
   margin: 1.3rem 4rem;
   width: 12rem;
-  display: inline-block;
+}
+@media screen and (max-width: 500px) {
+  .btn--try {
+    background-color: rgb(143, 248, 248);
+    color: black;
+    margin: 1.3rem 0;
+    width: 12rem;
+  }
 }
 .btn--try:hover {
   background-color: rgb(35, 252, 252);
