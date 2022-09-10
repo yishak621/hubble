@@ -67,7 +67,7 @@ img {
 }
 .top {
   display: flex;
-margin-top:4rem;
+
   justify-content: space-between;
 
   width: auto;
