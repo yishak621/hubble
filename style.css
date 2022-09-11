@@ -132,11 +132,12 @@ img {
     background-color: rgb(143, 248, 248);
     color: black;
     margin: 1.3rem 0;
-    width: 12rem;
+    width: 8rem;
   }
 }
 .btn--try:hover {
   background-color: rgb(35, 252, 252);
+  color:white;
 }
 .btn--start {
   background-color: var(--color-pink);
