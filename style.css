@@ -136,8 +136,8 @@ img {
   }
 }
 .btn--try:hover {
-  background-color: rgb(35, 252, 252);
-  color:white;
+  background-color: rgb(358, 252, 252);
+  color:red;
 }
 .btn--start {
   background-color: var(--color-pink);
