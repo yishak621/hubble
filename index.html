@@ -2,16 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <title>Hubble.trial.yishak</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,153 +14,172 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
-
-    <title>
-      Yishak Abrham | Huddle landing page with alternating feature blocks
-    </title>
   </head>
-
   <body>
-    <section class="huddle color">
-      <header>
-        <div class="top">
-          <img
-            class="logo"
-            src="images/logo.svg"
-            alt=""
-            data-aos="fade-right"
-          />
-          <a href="#"
-            ><button class="btn btn--try" data-aos="fade-left">
-              Try It Free
-            </button></a
-          >
-        </div>
-      </header>
-      <div class="huddle-community grid1x2">
-        <div class="huddle__left" data-aos="fade-up-right">
-          <h1>Build The Community Your Fans Will Love</h1>
-          <p class="huddle__para">
-            Huddle re-imagines the way we build communities . You have a
-            voice,but so does your audience. create connections with your users
-            users as you engage in genuine discussion.
+    <section class="hero--section">
+      <div class="top--bar">
+        <img class="logo--img" src="images/logo.svg" alt="" />
+        <button class="btn btn--primary">Try it free</button>
+      </div>
+
+      <div class="grid1x2">
+        <div class="text hero--text" data-aos="fade-up-right">
+          <h1 class="hero__header">Build The Community Your Fans Will Love</h1>
+          <p class="hero__paragraph">
+            Huddle re-imagines the way we build communities.You have a voice ,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
           </p>
-          <button class="btn btn--start">Get Started For Free</button>
+          <button class="btn btn--secondary">
+            <a href="#">Get Started for free</a>
+          </button>
         </div>
-        <div class="huddle__right" data-aos="fade-up-left">
-          <div class="image">
-            <img
-              class="image__mockup"
-              src="images/illustration-mockups.svg"
-              alt=""
-            />
-          </div>
+        <div data-aos="fade-up-left">
+          <img
+            class="pictures"
+            src="../images/illustration-mockups.svg"
+            alt=""
+          />
         </div>
       </div>
     </section>
-
     <section class="card">
-      <div class="card--grid">
-        <div class="picture" data-aos="flip-left">
-          <img src="images/illustration-grow-together.svg" alt="" />
-        </div>
-        <div class="text" data-aos="flip-right">
-          <h2 class="text__header">Grow Together</h2>
-          <p class="text__para">
+      <div class="grid1x2 grid--card">
+        <div class="text card__text" data-aos="flip-left">
+          <h2 class="card__header">Grow Together</h2>
+          <p class="card__paragraph">
             Generate meningfull discussion with your audience and build strong
             ,loyal community. think of insightfull conversations you miss out on
             a feedback form.
           </p>
         </div>
+        <div class="card__pic" data-aos="flip-right">
+          <img
+            class="pictures"
+            src="../images/illustration-grow-together.svg"
+            alt=""
+          />
+        </div>
       </div>
 
-      <div class="card--grid">
-        <div class="picture" data-aos="flip-left">
-          <img src="images/illustration-flowing-conversation.svg" alt="" />
-        </div>
-        <div class="text" data-aos="flip-right">
-          <h2 class="text__header">Flowing Conversation</h2>
-          <p class="text__para">
+      <div class="grid1x2 grid--card">
+        <div class="text card__text flow__text" data-aos="flip-left">
+          <h2 class="card__header">Flowing Conversation</h2>
+          <p class="card__paragraph">
             You wouldn't paginate a conversation in real life, so why do it
             online . our threads have just-in-time loading for a more natural
             flow.
           </p>
         </div>
-      </div>
-      <div class="card--grid first-grid">
-        <div class="picture" data-aos="flip-left">
-          <img src="images/illustration-your-users.svg" alt="" />
+        <div class="card__pic" data-aos="flip-right">
+          <img
+            class="pictures"
+            src="../images/illustration-flowing-conversation.svg"
+            alt=""
+          />
         </div>
-        <div class="text" data-aos="flip-right">
-          <h2 class="text__header">Your Users</h2>
-          <p class="text__para">
-            It takes no time at all to integrate Huddle with Your apps
+      </div>
+
+      <div class="grid1x2 grid--card">
+        <div class="text card__text" data-aos="flip-left">
+          <h2 class="card__header">Your Users</h2>
+          <p class="card__paragraph">
+            It takes no time at all to integrate Huddle with Your app's
             authentication solution. this means once signed in to your app,
             users can start chat immedietly.
           </p>
         </div>
+        <div class="card__pic" data-aos="flip-right">
+          <img
+            class="pictures"
+            src="../images/illustration-your-users.svg"
+            alt=""
+          />
+        </div>
       </div>
     </section>
-
-    <section class="callout_section">
-      <div
-        class="build--box"
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-      >
-        <h2 class="build--header">Ready To Build Your Community?</h2>
-        <button class="btn btn--start btn__build">Get Started For Free</button>
+    <section class="callout">
+      <div class="center">
+        <div
+          class="callout--box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <h2 class="callout__header">Ready To Build Your Community?</h2>
+          <button class="btn btn--secondary">
+            <a href="#">Get Started For Free</a>
+          </button>
+        </div>
       </div>
     </section>
-
     <section class="footer">
       <div class="grid1x4">
-        <div class="first__box">
-          <ul class="main__list">
-            <li data-aos="zoom-out-right">
+        <div class="contact">
+          <ul class="contact__list">
+            <li class="contact li">
               <a href="index.html"
                 ><img class="logo__footer" src="images/logo-white.svg" alt=""
               /></a>
             </li>
-            <li class="list__one first__list">
+            <li class="contact__li">
               <img
-                class="icon__image icon__location"
-                src="images/icon-location.svg"
+                class="icon__img icon__location"
+                src="../images/icon-location.svg"
                 alt=""
               />
-              <p>
+              <p class="contact__paragraph">
                 Addis Ababa Ethiopia, Denver street Amhara Region ,North
                 District -follow our location to contact us
               </p>
             </li>
-            <li class="list__one first__list">
-              <img class="icon__image" src="images/icon-phone.svg" alt="" />
-              <p>+251-969-142-623</p>
+            <li class="contact__li">
+              <img class="icon__img" src="../images/icon-phone.svg" alt="" />
+              <p class="contact__paragraph">+251-969-142-623</p>
             </li>
-            <li class="list__one first__list">
-              <img class="icon__image" src="images/icon-email.svg" alt="" />
-              <p>Yishakabrham@huddle.com</p>
+            <li class="contact__li">
+              <img class="icon__img" src="../images/icon-email.svg" alt="" />
+              <p class="contact__paragraph">example@huddle.com</p>
             </li>
           </ul>
         </div>
-        <div class="list">
-          <ul class="main__list">
-            <li class="list__one"><a href="#">About Us</a></li>
-            <li class="list__one"><a href="#">What We Do</a></li>
-            <li class="list__one"><a href="#">FAQ</a></li>
+        <div class="link1">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="#">FAQ</a></li>
           </ul>
         </div>
-        <div class="list last__list">
-          <ul class="main__list">
-            <li class="list__one"><a href="">Carreer</a></li>
-            <li class="list__one"><a href="">Blog</a></li>
-            <li class="list__one"><a href="">Contact us</a></li>
+        <div class="link2">
+          <ul>
+            <li><a href="#">Carrer</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
         <div class="social">
-          <img class="social__image" src="images/logo-facebook.svg" alt="" />
-          <img class="social__image" src="images/logo-twitter.svg" alt="" />
-          <img class="social__image" src="images/logo-instagram.svg" alt="" />
+          <div class="social__logo">
+            <a href="#">
+              <img
+                class="social__image"
+                src="../images/logo-facebook.svg"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <img
+                class="social__image"
+                src="../images/logo-twitter.svg"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <img
+                class="social__image"
+                src="../images/logo-instagram.svg"
+                alt=""
+              />
+            </a>
+          </div>
           <p class="copyright">
             &copy; Copyright 2018 Huddle. All rights reserved.
           </p>
