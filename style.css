@@ -80,6 +80,11 @@ h3 {
   }
   .hero__header {
     font-size: 2.3rem;
+    max-width: 100%;
+    margin-top: 8rem;
+  }
+  .hero__paragraph {
+    max-width: 100%;
   }
 }
 /*section backgrounds*/
@@ -187,7 +192,7 @@ h3 {
   }
   .hero--text {
     margin-bottom: 6rem;
-     margin-left: 1rem;
+    margin-left: 1rem;
   }
 }
 .pictures {
@@ -362,7 +367,7 @@ li > a:hover {
   margin-left: 1rem;
   cursor: pointer;
   transition: all 0.4s;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .social__image:hover {
   transform: scale(1.5) rotate(-360deg);
